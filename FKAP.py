@@ -1,7 +1,7 @@
 from scapy.all import *
 from colorama import Fore
 
-iface = raw_input("Plese Enter The(For Example:wlan0mon): ")
+iface = raw_input("Plese Enter The Interface (WireLess Net Adapter On Monitor Mode): ")
 sender_mac = RandMAC()
 ssid = raw_input("Plese Enter The SSID(Name Of AP):" )
 dot11 = Dot11(type=0, subtype=8, addr1="ff:ff:ff:ff:ff:ff", addr2=sender_mac, addr3=sender_mac)
