@@ -44,5 +44,5 @@ if TN == 4:
 if TN == 5:
 	os.system("python Syn.py")
 if TN == 6:
-	os.system("python NetCapture.py")
+	os.system("python NetSniffer.py")
 	
