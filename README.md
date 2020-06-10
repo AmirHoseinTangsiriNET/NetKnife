@@ -2,12 +2,11 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 # NetKnife
-A framework for testing intrusion testing and intra-network attacks, as well as several other widely used tools 
-This framework is written using Python2 There are many uses for the Scapy module 
+A framework for testing intrusion testing and intra-network attacks
+Writed With Python Version 2
 
-# Developer: Amir Hossein Tangsiri Nejad
+# Developer: AmirHossein Tangsiri Nejad
 
-how to install it: Download it first Log in to the NetKnife folder and run the NetKnife.py file
 # installation
 ➜  ~ git clone https://github.com/AmirHoseinTnagsiriNET/NetKnife 
 
