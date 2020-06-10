@@ -3,7 +3,7 @@
 ![Apache 2,0 License](https://img.shields.io/badge/license-Apache%202.0-blue)
 # NetKnife Intrusion Testing Framework
 A framework for intrusion testing and intra-network attacks
-Writed With Python Version 2
+Writed With Python 
 
 # Developer: AmirHossein Tangsiri Nejad
 
