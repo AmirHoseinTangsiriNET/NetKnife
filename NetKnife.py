@@ -19,13 +19,13 @@ print ("[4]:Hash Creator Tools")
 print ("[5]:SYN Flooder Tools")
 TN = input ("[+]Please Enter the Toools Number: ")
 if TN == 1:
-	os.system("cd Arp-Cache-Poisiner ; python Arp.py")
+	os.system("python Arp.py")
 if TN == 2:
-	os.system("cd Fake-AP ; python FKAP.py")
+	os.system("python FKAP.py")
 if TN == 3:
-	os.system("cd SSID-Hidden ; python SSID.py")
+	os.system("python SSID.py")
 if TN == 4:
-	os.system("cd Hash-Generator ; python Hash.py")
+	os.system("python Hash.py")
 if TN == 5:
-	os.system("cd Syn-Flooder ; python Syn.py")
+	os.system("python Syn.py")
 	
