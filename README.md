@@ -8,8 +8,11 @@ git clone https://github.com/AmirHoseinTnagsiriNET/NetKnife
 
 ➜  ~ git clone https://github.com/AmirHoseinTnagsiriNET/NetKnife 
 Cloning into 'NetKnife'...
+
 remote: Enumerating objects: 18, done.
+
 remote: Counting objects: 100% (18/18), done.
+
 remote: Compressing objects: 100% (17/17), done.
 remote: Total 18 (delta 4), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (18/18), done.
