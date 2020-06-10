@@ -29,6 +29,7 @@ printer ("[3]:SSID Hidden Locator Tools(Coming Soon)")
 printer ("[4]:Hash Creator Tools")
 printer ("[5]:SYN Flooder Tools")
 printer ("[6]:Network Packet Capture Tools")
+printer ("[99]: Exit The NetKnife")
 
 TN = input ("[+]Please Enter the Toools Number: ")
 if TN == 1:
@@ -45,4 +46,9 @@ if TN == 5:
 	os.system("python Syn.py")
 if TN == 6:
 	os.system("python NetSniffer.py")
+if TN == 99:
+	printer ("Exited The NetKnife")
+	sys.exit()
+else:
+	print ("[!]Not Found Tools Number")
 	
