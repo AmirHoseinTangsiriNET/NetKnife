@@ -13,4 +13,4 @@ print """
 while True:
 	time.sleep(3)
 	os.system("sudo systemctl reload tor")
-print (Fore.GREEN + "Changed IP")
+print Fore.GREEN + "Changed IP"
