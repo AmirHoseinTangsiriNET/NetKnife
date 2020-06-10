@@ -32,6 +32,7 @@ printer ("[5]:SYN Flooder Tools")
 printer ("[6]:Network Packet Capture Tools")
 printer ("[7]:AP And WIFI Device Detection Tools")
 printer ("[8]:Public IP Changer In 3 Per Second(Linux System-D Only)")
+printer ("[9]:Wi-Fi Deauthentication Attacker Tools")
 printer ("[99]: Exit The NetKnife")
 
 TN = input ("[+]Please Enter the Toools Number: ")
@@ -53,6 +54,8 @@ if TN == 7:
 	ps.system("python APD.py")
 if TN == 8:
 	os.system("python IP-Changer.py")
+if TN == 9:
+	os.system("python Deauthentication.py")
 if TN == 99:
 	printer ("Exited The NetKnife")
 	sys.exit()
