@@ -30,6 +30,7 @@ printer ("[4]:Hash Creator Tools")
 printer ("[5]:SYN Flooder Tools")
 printer ("[6]:Network Packet Capture Tools")
 printer ("[7]:AP And WIFI Device Detection Tools")
+printer ("[8]:Public IP Changer In 3 Per Second(Linux System-D Only)")
 printer ("[99]: Exit The NetKnife")
 
 TN = input ("[+]Please Enter the Toools Number: ")
@@ -49,6 +50,8 @@ if TN == 6:
 	os.system("python NetSniffer.py")
 if TN == 7:
 	ps.system("python APD.py")
+if TN == 8:
+	os.system("python IP-Changer.py")
 if TN == 99:
 	printer ("Exited The NetKnife")
 	sys.exit()
