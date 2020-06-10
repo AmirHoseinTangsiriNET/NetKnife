@@ -28,6 +28,8 @@ printer ("[2]:Fake Access Point Creator Tools")
 printer ("[3]:SSID Hidden Locator Tools(Coming Soon)")
 printer ("[4]:Hash Creator Tools")
 printer ("[5]:SYN Flooder Tools")
+printer ("[6]:Network Packet Capture Tools")
+
 TN = input ("[+]Please Enter the Toools Number: ")
 if TN == 1:
 	print "Coming Soon"
@@ -41,4 +43,6 @@ if TN == 4:
 	os.system("python Hash.py")
 if TN == 5:
 	os.system("python Syn.py")
+if TN == 6:
+	os.system("python NetCapture.py")
 	
