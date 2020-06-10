@@ -7,7 +7,7 @@ Writed With Python Version 2
 
 # Developer: AmirHossein Tangsiri Nejad
 
-# installation
+# Installation
 ➜  ~ git clone https://github.com/AmirHoseinTnagsiriNET/NetKnife 
 
 ➜  ~ cd NetKnife 
