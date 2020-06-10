@@ -1,6 +1,7 @@
 import os
 from colorama import Fore
-
+import sys
+import time
 print Fore.RED + ("""
 
 '|.   '|'           .   '||'  |'            ||    .'|.            
