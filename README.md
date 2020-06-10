@@ -5,7 +5,7 @@
 A framework for testing intrusion testing and intra-network attacks, as well as several other widely used tools 
 This framework is written using Python2 There are many uses for the Scapy module 
 
-Developer: Amir Hossein Tangsiri Nejad
+# Developer: Amir Hossein Tangsiri Nejad
 
 how to install it: Download it first Log in to the NetKnife folder and run the NetKnife.py file
 # installation
