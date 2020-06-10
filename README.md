@@ -5,7 +5,7 @@
 A framework for intrusion testing and intra-network attacks
 Writed With Python 
 
-# Developer: AmirHossein Tangsiri Nejad
+# Developer: AmirHossein Tangsiri Nezhad
 
 # Installation
 ➜  ~ git clone https://github.com/AmirHoseinTnagsiriNET/NetKnife 
