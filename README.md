@@ -6,5 +6,7 @@ Developer: Amir Hossein Tangsiri Nejad Here's
 how to install it: Download it first Log in to the NetKnife folder and run the NetKnife.py file
 
 ➜  ~ git clone https://github.com/AmirHoseinTnagsiriNET/NetKnife 
+
 ➜  ~ cd NetKnife 
+
 ➜  NetKnife git:(master) python NetKnife.py 
