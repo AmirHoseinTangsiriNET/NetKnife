@@ -35,7 +35,7 @@ printer ("[8]:Public IP Changer In 3 Per Second(Linux System-D Only)")
 printer ("[9]:Wi-Fi Deauthentication Attacker Tools")
 printer ("[99]: Exit The NetKnife")
 
-TN = input ("[+]Please Enter the Toools Number: ")
+TN = input ("[+]Please Enter the Tools Number: ")
 if TN == 1:
 	print "Coming Soon"
 	#os.system("python Arp.py")
