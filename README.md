@@ -4,7 +4,7 @@
 # NetKnife Intrusion Testing Framework
 A framework for intrusion testing and intra-network attacks
 Writed With Python 
-
+Tested On Linux OS 
 # Developer: AmirHossein Tangsiri Nezhad
 
 # Installation
