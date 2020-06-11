@@ -51,7 +51,7 @@ if TN == 5:
 if TN == 6:
 	os.system("python NetSniffer.py")
 if TN == 7:
-	ps.system("python APD.py")
+	os.system("python APD.py")
 if TN == 8:
 	os.system("python IP-Changer.py")
 if TN == 9:
