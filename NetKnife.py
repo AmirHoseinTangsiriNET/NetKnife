@@ -21,7 +21,7 @@ def printer(Print):
 printer ("\033[91m[+]Welcome To NetKnife Framework")
 printer ("[+]Please Wait")
 
-printer Fore.BLUE + ("Developer: AmirHosein Tangsiri Nezhad")
+printer ("Developer: AmirHosein Tangsiri Nezhad")
 time.sleep(3)
 printer ("[+]Chose Tools Number ")
 printer ("[1]:Arp Cache Poisiner Tools(Coming Soon)")
