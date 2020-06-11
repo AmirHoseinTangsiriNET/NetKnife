@@ -6,13 +6,13 @@ from scapy.all import *
 import hashlib
 
 os.system("clear")
-print Fore.RED + ("""
+print Fore.RED + """
 '|.   '|'           .   '||'  |'            ||    .'|.            
  |'|   |    ....  .||.   || .'    .. ...   ...  .||.     ....     
  | '|. |  .|...||  ||    ||'|.     ||  ||   ||   ||    .|...||  
  |   |||  ||       ||    ||  ||    ||  ||   ||   ||    ||       
 .|.   '|   '|...'  '|.' .||.  ||. .||. ||. .||. .||.    '|...' 
-""")
+"""
 def printer(Print):
     for c in Print + '\n':
         sys.stdout.write(c)
