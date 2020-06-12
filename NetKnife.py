@@ -4,6 +4,8 @@ import sys
 import time
 from scapy.all import *
 import hashlib
+import nmap
+
 
 os.system("clear")
 print Fore.RED + ("""
