@@ -10,6 +10,7 @@ A framework for intrusion testing and intra-network attacks
 Writed With Python 
 Tested On Linux OS 
 # Developer: AmirHossein Tangsiri Nezhad
+This framework is being developed by Amir Hossein Tangsiri Nezhad
 
 # Installation
 ➜  ~ git clone https://github.com/AmirHoseinTnagsiriNET/NetKnife 
