@@ -19,10 +19,6 @@ This framework is being developed by Amir Hossein Tangsiri Nezhad
 
 ➜  NetKnife git:(master) python NetKnife.py 
 
-## Python 2
-<p align="center">
-  <img src="Logo/Python-Logo.gif" alt="Master">
-</p>
 
 # Tools Details 
 
@@ -54,6 +50,7 @@ This tool is used to record ongoing traffic from the interface
 
 This tool is used to detect the Mac and SSID addresses of AP and Wireless devices
 
+
 [8]: Public IP Changer In 3 Per Second:
 
 This tool changes the general IP address of your system once every 3 seconds using the Tor service.
@@ -62,3 +59,8 @@ Note: This tool is missing on Linux systems along with System-D
 [9]: Wi-Fi Deauthentication Attacker Tools:
 
 This tool is used to implement the Deauthentication attack on Wirelss networks
+
+# Python 2
+<p align="center">
+  <img src="Logo/Python-Logo.gif" alt="Master">
+</p>
