@@ -272,8 +272,8 @@ def TCPPortScanner():
 scanner = nmap.PortScanner()
 
 target = raw_input("Plese Enter The IP Or Domin Target: ")
-portrange = raw_input("Plese Enter The Port Range(For Example 22-443): "
-)
+portrange = raw_input("Plese Enter The Port Range(For Example 22-443): ")
+
 scanResult = scanner.scan(target, portrange , arguments='-T4 -sV')
 
 for host in scanner.all_hosts():
