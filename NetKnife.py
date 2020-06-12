@@ -38,7 +38,7 @@ printer ("[6]:Network Packet Capture Tools")
 printer ("[7]:AP And WIFI Device Detection Tools")
 printer ("[8]:Public IP Changer In 3 Per Second(Linux System-D Only)")
 printer ("[9]:Wi-Fi Deauthentication Attacker Tools")
-printer ("[10]Tcp Port Scanner Tools")
+printer ("[10]:Tcp Port Scanner Tools")
 printer ("[99]: Exit The NetKnife")
 
 #[1]:Arp Cache Poisiner Tools
@@ -92,18 +92,18 @@ def SSIDHeddin():
 
 """
 
-iface = raw_input("Plese Enter The Network Adapter: ")
+	iface = raw_input("Plese Enter The Network Adapter: ")
 
-SSID_Hiiden = set()
-def SSID(packet):
-	if packet.haslayer(Dot11Beacon):
-        	if not packet.info:
-            		if packet.addr3 not in SSID_Hiiden:
-                		print "Discovered Hidden Network "
-                		print "-------------------------"
-        	        	print "Network BSSID: " + addr3
-	elif packet.haslayer(Dot11ProbeRes) and (packet.addr3 in SSID_Hiiden):
-		print "Network SSID: " + packet.info, packet.addr3
+	SSID_Hiiden = set()
+	def SSID(packet):
+		if packet.haslayer(Dot11Beacon):
+        		if not packet.info:
+          	  		if packet.addr3 not in SSID_Hiiden:
+           		     		print "Discovered Hidden Network "
+            		    		print "-------------------------"
+        		        	print "Network BSSID: " + addr3
+		elif packet.haslayer(Dot11ProbeRes) and (packet.addr3 in SSID_Hiiden):
+			print "Network SSID: " + packet.info, packet.addr3
 
 
 	sniff(iface=iface , count=1000, prn=SSID)
