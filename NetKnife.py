@@ -21,11 +21,16 @@ def printer(Print):
         sys.stdout.flush()
         time.sleep(5. / 100)
 
+printer ("Developer: AmirHosein Tangsiri Nezhad")
+printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
+printer ("--------------------------------------------------------------")
+	
+	
 printer ("\033[91m[+]Welcome To NetKnife Framework")
 printer ("[+]Please Wait")
 
-printer ("Developer: AmirHosein Tangsiri Nezhad")
-printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
+#printer ("Developer: AmirHosein Tangsiri Nezhad")
+#printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
 
 time.sleep(3)
 printer ("[+]Chose Tools Number ")
