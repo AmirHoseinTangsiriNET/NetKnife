@@ -287,7 +287,7 @@ def TCPPortScanner():
 	Port_Number.sort()
 	for port in Port_Number:
 		print ("Port: %s\tstate : %s" % (port, scanner[host][proto][port]['state']))
-		print "Aggressive Result %s:" % scanResult
+		print "Aggressive Result\n:" % scanResult
 
 
 	
