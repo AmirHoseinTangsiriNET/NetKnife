@@ -46,7 +46,7 @@ printer ("\033[91m[7]:AP And WIFI Device Detection Tools")
 printer ("\033[91m[8]:Public IP Changer In 3 Per Second(Linux System-D Only)")
 printer ("\033[91m[9]:Wi-Fi Deauthentication Attacker Tools")
 printer ("\033[91m[10]:Tcp Port Scanner Tools")
-print Fore.GREEN + ("[99]:Exit The NetKnife")
+printer ("\033[91m[99]:Exit The NetKnife")
 
 print Fore.GREEN + ("--------------------------------------------------------------")
 
