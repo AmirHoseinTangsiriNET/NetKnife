@@ -25,6 +25,8 @@ printer ("\033[91m[+]Welcome To NetKnife Framework")
 printer ("[+]Please Wait")
 
 printer ("Developer: AmirHosein Tangsiri Nezhad")
+printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
+
 time.sleep(3)
 printer ("[+]Chose Tools Number ")
 printer ("[1]:Arp Cache Poisiner Tools(Coming Soon)")
