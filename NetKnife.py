@@ -329,5 +329,5 @@ if TN == 10:
 if TN == 99:
 	printer ("Exited The NetKnife")
 	sys.exit()
-else:
-	print ("[!]Not Found Tools Number")
+#else:
+#	print ("[!]Not Found Tools Number")
