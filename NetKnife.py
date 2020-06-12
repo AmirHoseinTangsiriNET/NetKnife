@@ -283,11 +283,11 @@ def TCPPortScanner():
     		for proto in scanner[host].all_protocols():
         		print("Protocol Type: %s" % proto)
  
-			        Port_Number = scanner[host][proto].keys()
-			        Port_Number.sort()
-			        for port in Port_Number:
-			            print ("Port: %s\tstate : %s" % (port, scanner[host][proto][port]['state']))
-					print "Aggressive Result %s:" % scanResult
+	Port_Number = scanner[host][proto].keys()
+	Port_Number.sort()
+	for port in Port_Number:
+		print ("Port: %s\tstate : %s" % (port, scanner[host][proto][port]['state']))
+		print "Aggressive Result %s:" % scanResult
 
 
 	
