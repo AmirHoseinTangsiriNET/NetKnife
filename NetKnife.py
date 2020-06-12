@@ -8,7 +8,7 @@ import nmap
 import socket
 
 os.system("clear")
-print Fore.RED + ("""
+print Fore.GREEN + ("""
 '|.   '|'           .   '||'  |'            ||    .'|.            
  |'|   |    ....  .||.   || .'    .. ...   ...  .||.     ....     
  | '|. |  .|...||  ||    ||'|.     ||  ||   ||   ||    .|...||  
