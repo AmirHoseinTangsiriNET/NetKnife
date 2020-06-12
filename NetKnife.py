@@ -21,9 +21,9 @@ def printer(Print):
         sys.stdout.flush()
         time.sleep(5. / 100)
 
+printer ("Welcome To NetKnife Framework")
 printer ("Developer: AmirHosein Tangsiri Nezhad")
 printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
-printer ("Welcome To NetKnife Framework")
 printer ("Plese Select The Tools Number")
 printer ("--------------------------------------------------------------")
 	
@@ -35,7 +35,7 @@ printer ("--------------------------------------------------------------")
 #printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
 
 time.sleep(3)
-printer ("\033[91m[+]Chose Tools Number ")
+
 printer ("\033[91m[1]:Arp Cache Poisiner Tools(Coming Soon)")
 printer ("\033[91m[2]:Fake Access Point Creator Tools")
 printer ("\033[91m[3]:SSID Hidden Locator Tools")
