@@ -50,7 +50,6 @@ This tool is used to record ongoing traffic from the interface
 
 This tool is used to detect the Mac and SSID addresses of AP and Wireless devices
 
-
 [8]: Public IP Changer In 3 Per Second:
 
 This tool changes the general IP address of your system once every 3 seconds using the Tor service.
@@ -59,6 +58,10 @@ Note: This tool is missing on Linux systems along with System-D
 [9]: Wi-Fi Deauthentication Attacker Tools:
 
 This tool is used to implement the Deauthentication attack on Wirelss networks
+
+[10]Tcp Port Scanner Tools:
+
+This tool is used to scan Tcp protocol ports. This tool, unlike similar tools in other frameworks, has a higher scanning power
 
 # Python 2
 <p align="center">
