@@ -19,7 +19,7 @@ def printer(Print):
     for c in Print + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(5. / 100)
+        time.sleep(4. / 100)
 
 printer ("Welcome To NetKnife Framework")
 printer ("Developer: AmirHosein Tangsiri Nezhad")
@@ -46,8 +46,8 @@ printer ("\033[91m[7]:AP And WIFI Device Detection Tools")
 printer ("\033[91m[8]:Public IP Changer In 3 Per Second(Linux System-D Only)")
 printer ("\033[91m[9]:Wi-Fi Deauthentication Attacker Tools")
 printer ("\033[91m[10]:Tcp Port Scanner Tools")
+printer ("\033[91m[11]:Live IP And Device scanner")
 printer ("\033[91m[99]:Exit The NetKnife")
-
 print Fore.GREEN + ("--------------------------------------------------------------")
 
 
@@ -329,6 +329,42 @@ def TCPPortScanner():
 	
 	
 	
+NetScanner():
+	print """
+	#     #               #####                                            
+	##    # ###### ##### #     #  ####    ##   #    # #    # ###### #####  
+	# #   # #        #   #       #    #  #  #  ##   # ##   # #      #    # 
+	#  #  # #####    #    #####  #      #    # # #  # # #  # #####  #    # 
+	#   # # #        #         # #      ###### #  # # #  # # #      #####  
+	#    ## #        #   #     # #    # #    # #   ## #   ## #      #   #  
+	#     # ######   #    #####   ####  #    # #    # #    # ###### #    # 
+
+	"""
+	NetRange = raw_input("Plese Enter The Network Range IP Address: ")
+
+	ArpPakcet = ARP(pdst=NetRange)
+
+	NetMac = Ether(dst="ff:ff:ff:ff:ff:ff")
+	#Brotcast Mac Address
+
+	packet = NetMac/ArpPakcet
+	output = srp(packet, timeout=4, verbose=0)[0]
+
+
+	NetAva = []
+	for received, sent, in output:
+	    NetAva.append({'IP Address': received.psrc, 'Mac Address': received.hwsrc})
+	print "---------------------------------"
+	print "Live Addresses Were Discovered"
+
+	print "IP Address" + " "*12 + "Mac Address"
+	for client in NetAva:
+ 	   print "{:16}      {}".format(client['IP Address'], client['Mac Address'])
+	   print "---------------------------------"
+	
+	
+	
+	
 
 
 TN = input ("[+]Please Enter the Tools Number: ")
@@ -362,6 +398,8 @@ if TN == 9:
     #os.system("python Deauthentication.py")
 if TN == 10:
 	TCPPortScanner()
+if TN == 11:
+	NetScanner()
 if TN == 99:
 	printer ("Exited The NetKnife")
 	sys.exit()
