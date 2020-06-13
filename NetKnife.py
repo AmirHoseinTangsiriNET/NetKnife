@@ -149,7 +149,7 @@ def HashGen():
     		sha512:   [+]-5
     """
     text = raw_input("[*]Please Enter The Your Text: ")
-    hashmodel = raw_input("[*] plese entee the mod hash: ")
+    hashmodel = raw_input("[*]Please Ente The Hash Algorithm Number: ")
     if hashmodel == "1":
     	md5 = hashlib.md5()
     	md5.update(inputer)
