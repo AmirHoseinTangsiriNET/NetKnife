@@ -329,7 +329,7 @@ def TCPPortScanner():
 	
 	
 	
-NetScanner():
+def NetScanner():
 	print """
 	#     #               #####                                            
 	##    # ###### ##### #     #  ####    ##   #    # #    # ###### #####  
