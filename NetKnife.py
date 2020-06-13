@@ -6,8 +6,13 @@ from scapy.all import *
 import hashlib
 import nmap
 import socket
+from playsound import playsound
 
 os.system("clear")
+print Fore.BLUE + "Started NetKnife Voice"
+playsound("Voice/NetVoice.mp3")
+os.system("clear")
+
 print Fore.GREEN + ("""
 '|.   '|'           .   '||'  |'            ||    .'|.            
  |'|   |    ....  .||.   || .'    .. ...   ...  .||.     ....     
