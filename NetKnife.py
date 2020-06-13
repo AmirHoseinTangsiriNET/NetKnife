@@ -328,6 +328,8 @@ def TCPPortScanner():
 
 	
 	
+#Live IP And Device scanner Tools:
+#This tool is used to scan IP addresses and Mac addresses of active devices within the network
 	
 def NetScanner():
 	print """
