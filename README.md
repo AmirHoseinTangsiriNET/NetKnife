@@ -19,6 +19,23 @@ This framework is being developed by Amir Hossein Tangsiri Nezhad
 
 ➜  NetKnife git:(master) python NetKnife.py 
 
+# Prerequisite
+Python 2
+pip2
+Scapy
+nmap-python 
+socket
+hashlib
+playsound 
+Gi
+os
+sys
+time
+
+# Python 2
+<p align="center">
+  <img src="Logo/Python-Logo.gif" alt="Master">
+</p>
 
 # Tools Details 
 
@@ -67,7 +84,3 @@ This tool is used to scan Tcp protocol ports. This tool, unlike similar tools in
 
 This tool is used to scan IP addresses and Mac addresses of active devices within the network
 
-# Python 2
-<p align="center">
-  <img src="Logo/Python-Logo.gif" alt="Master">
-</p>
