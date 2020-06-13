@@ -20,27 +20,27 @@ This framework is being developed by Amir Hossein Tangsiri Nezhad
 ➜  NetKnife git:(master) python NetKnife.py 
 
 # Prerequisite
-Python 2
+## Python 2
 
-pip2
+## pip2
 
-Scapy
+## Scapy
 
-nmap-python 
+## nmap-python 
 
-socket
+## socket
 
-hashlib
+## hashlib
 
-playsound 
+## playsound 
 
-Gi
+## Gi
 
-os
+## os
 
-sys
+## sys
 
-time
+## time
 
 # Python 2
 <p align="center">
