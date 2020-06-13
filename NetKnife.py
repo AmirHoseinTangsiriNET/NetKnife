@@ -29,7 +29,7 @@ def printer(Print):
 printer ("Welcome To NetKnife Framework")
 printer ("Developer: AmirHosein Tangsiri Nezhad")
 printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
-printer ("Plese Select The Tools Number")
+printer ("Please Select The Tools Number")
 printer ("--------------------------------------------------------------")
 	
 	
