@@ -21,15 +21,25 @@ This framework is being developed by Amir Hossein Tangsiri Nezhad
 
 # Prerequisite
 Python 2
+
 pip2
+
 Scapy
+
 nmap-python 
+
 socket
+
 hashlib
+
 playsound 
+
 Gi
+
 os
+
 sys
+
 time
 
 # Python 2
