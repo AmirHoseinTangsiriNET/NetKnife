@@ -42,7 +42,7 @@ This framework is being developed by Amir Hossein Tangsiri Nezhad
 
 ## time module
 
-# Python 2
+# Writed With Python 2
 <p align="center">
   <img src="Logo/Python-Logo.gif" alt="Master">
 </p>
