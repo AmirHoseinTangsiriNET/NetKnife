@@ -63,6 +63,10 @@ This tool is used to implement the Deauthentication attack on Wirelss networks
 
 This tool is used to scan Tcp protocol ports. This tool, unlike similar tools in other frameworks, has a higher scanning power
 
+## Live IP And Device scanner Tools:
+
+This tool is used to scan IP addresses and Mac addresses of active devices within the network
+
 # Python 2
 <p align="center">
   <img src="Logo/Python-Logo.gif" alt="Master">
