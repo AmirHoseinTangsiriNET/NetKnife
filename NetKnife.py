@@ -392,43 +392,46 @@ def MacFlooder():
 
 	
 
-TN = input ("[+]Please Enter the Tools Number: ")
-if TN == 1:
-	Arp()
-    #print "Coming Soon"
+while True:
+	
+	TN = input ("[+]Please Enter the Tools Number: ")
+	if TN == 1:
+		Arp()
+        #print "Coming Soon"
 	#os.system("python Arp.py")
-if TN == 2:
-	FakeAP()
+	if TN == 2:
+		FakeAP()
     #os.system("python FKAP.py")
-if TN == 3:
-	SSIDHeddin()
+	if TN == 3:
+		SSIDHeddin()
     #print "Coming Soon"
     #os.system("python SSID.py")
-if TN == 4:
-	HashGen()
+	if TN == 4:
+		HashGen()
     #os.system("python Hash.py")
-if TN == 5:
-	Syn()
+	if TN == 5:
+		Syn()
     #os.system("python Syn.py")
-if TN == 6:
-	NetSniffer()
+	if TN == 6:
+		NetSniffer()
     #os.system("python NetSniffer.py")
-if TN == 7:
-	os.system("python APD.py")
-if TN == 8:
-	IP_Changer()
+	if TN == 7:
+		APD()		
+	#os.system("python APD.py")
+	if TN == 8:
+		IP_Changer()
     #os.system("python IP-Changer.py")
-if TN == 9:
-	Deauthentication()
+	if TN == 9:
+		Deauthentication()
     #os.system("python Deauthentication.py")
-if TN == 10:
-	TCPPortScanner()
-if TN == 11:
-	NetScanner()
-if TN == 12:
-	MacFlooder()
-if TN == 99:
-	printer ("Exited The NetKnife")
-	sys.exit()
+	if TN == 10:
+		TCPPortScanner()
+	if TN == 11:
+		NetScanner()
+	if TN == 12:
+		MacFlooder()
+	if TN == 99:
+		printer ("Exited The NetKnife")
+		sys.exit()
 #else:
 #	print ("[!]Not Found Tools Number")
