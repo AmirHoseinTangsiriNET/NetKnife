@@ -8,6 +8,10 @@ import nmap
 import socket
 from playsound import playsound
 
+if os.getuid == 0:
+        print ("Plese Ran As Root User")
+        sys,exit()
+
 os.system("clear")
 print Fore.BLUE + "Started NetKnife Voice"
 playsound("Voice/NetVoice.mp3")
