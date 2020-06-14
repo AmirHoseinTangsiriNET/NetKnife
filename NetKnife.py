@@ -12,7 +12,7 @@ os.system("clear")
 print Fore.BLUE + "Started NetKnife Voice"
 playsound("Voice/NetVoice.mp3")
 os.system("clear")
-
+time.sleep(1)
 print Fore.GREEN + ("""
 '|.   '|'           .   '||'  |'            ||    .'|.            
  |'|   |    ....  .||.   || .'    .. ...   ...  .||.     ....     
@@ -39,7 +39,7 @@ printer ("--------------------------------------------------------------")
 #printer ("Developer: AmirHosein Tangsiri Nezhad")
 #printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
 
-time.sleep(3)
+time.sleep(2)
 
 printer ("\033[91m[1]:Arp Cache Poisiner Tools(Coming Soon)")
 printer ("\033[91m[2]:Fake Access Point Creator Tools")
