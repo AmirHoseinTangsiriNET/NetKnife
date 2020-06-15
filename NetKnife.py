@@ -8,6 +8,8 @@ import nmap
 import socket
 from playsound import playsound
 
+os.system("python Docs/time.py")
+
 os.system("clear")
 print Fore.BLUE + "Started NetKnife Voice"
 playsound("Voice/NetVoice.mp3")
@@ -25,7 +27,6 @@ def printer(Print):
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(4. / 100)
-os.system("python time.py")
 printer ("Welcome To NetKnife Framework")
 printer ("Developer: AmirHosein Tangsiri Nezhad")
 printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
