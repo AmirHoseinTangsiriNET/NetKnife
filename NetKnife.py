@@ -419,9 +419,9 @@ if __name__ == '__main__':
                 MacFlooder()
             if TN == 99:
                 break
-            else:
-                print "[!]Wrong!!!"
+            #else:
+                #print "[!]Wrong!!!"
         except KeyboardInterrupt:
-            sys.exit("Bye Byte :D")
+            sys.exit("[-]Exited !")
         except :
             pass
