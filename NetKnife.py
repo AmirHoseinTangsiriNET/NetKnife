@@ -8,8 +8,6 @@ import nmap
 import socket
 from playsound import playsound
 
-os.system("python Docs/time.py")
-
 os.system("clear")
 print Fore.BLUE + "Started NetKnife Voice"
 playsound("Voice/NetVoice.mp3")
