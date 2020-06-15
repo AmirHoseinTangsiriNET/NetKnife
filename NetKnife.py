@@ -25,7 +25,7 @@ def printer(Print):
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(4. / 100)
-
+os.system("python time.py")
 printer ("Welcome To NetKnife Framework")
 printer ("Developer: AmirHosein Tangsiri Nezhad")
 printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
