@@ -27,7 +27,7 @@ def printer(Print):
     for c in Print + '\n':
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(4. / 100)
+        time.sleep(3. / 100)
 printer ("Welcome To NetKnife Framework")
 printer ("Developer: AmirHosein Tangsiri Nezhad")
 printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
@@ -41,7 +41,7 @@ printer ("--------------------------------------------------------------")
 #printer ("Developer: AmirHosein Tangsiri Nezhad")
 #printer ("GitHub: https://github.com/AmirHoseinTnagsiriNET/NetKnife")
 
-time.sleep(3)
+time.sleep(1)
 
 printer ("\033[91m[1]:Arp Cache Poisiner Tools")
 printer ("\033[91m[2]:Fake Access Point Creator Tools")
