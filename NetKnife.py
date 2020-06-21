@@ -9,6 +9,8 @@ import socket
 from playsound import playsound
 from getmac import get_mac_address
 
+sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=35, cols=170))
+
 def clean():
         os.system('cls' if os.name=='nt' else 'clear')
 clean()
