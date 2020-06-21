@@ -9,7 +9,9 @@ import socket
 from playsound import playsound
 from getmac import get_mac_address
 
-os.system("clear")
+def clean():
+        os.system('cls' if os.name=='nt' else 'clear')
+clean()
 print Fore.BLUE + "Started NetKnife Voice"
 playsound("Voice/NetVoice.mp3")
 os.system("clear")
