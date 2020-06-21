@@ -24,23 +24,25 @@ This framework is being developed by Amir Hossein Tangsiri Nezhad
 
 ## pip2
 
-## Scapy module
+## Scapy Module
 
-## nmap-python module
+## nmap-python Module
 
-## socket module
+## socket Module
 
-## hashlib module
+## hashlib Module
 
-## playsound module
+## playsound Module
 
-## Gi module
+## Gi Module
 
-## os module
+## os Module
 
-## sys module
+## sys Module
 
-## time module
+## time Module
+
+## getmac Module
 
 # Writed With Python 2
 <p align="center">
