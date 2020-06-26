@@ -57,7 +57,7 @@ printer ("\033[91m[9]:Wi-Fi Deauthentication Attacker Tools")
 printer ("\033[91m[10]:Tcp Port Scanner Tools")
 printer ("\033[91m[11]:Live IP And Device scanner")
 printer ("\033[91m[12]:Mac Flooder Tools")
-
+printer ("\033[91m[13]:Arp Spoofing And Arp Cache Poinsing Attack Detection Tools")
 printer ("\033[91m[99]:Exit The NetKnife")
 print Fore.GREEN + ("--------------------------------------------------------------")
 
@@ -424,6 +424,43 @@ def MacFlooder():
     sendp(Arp/Ether,iface=Iface,count=count,inter= .001)
 
 
+def ArpAttackDetector():
+	print """
+	                                                                  
+	     .oo       ooo.            o                  o               
+ 	   .P 8       8  `8.          8                  8               
+	   .P  8       8   `8 .oPYo.  o8P .oPYo. .oPYo.  o8P .oPYo. oPYo. 
+	  oPooo8 ooooo 8    8 8oooo8   8  8oooo8 8    '   8  8    8 8  `' 
+	 .P    8       8   .P 8.       8  8.     8    .   8  8    8 8     
+	.P     8       8ooo'  `Yooo'   8  `Yooo' `YooP'   8  `YooP' 8     
+	..:::::..::::::.....:::.....:::..::.....::.....:::..::.....:..::::
+	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	
+	
+	"""
+	def MacAddFounder(ip):
+
+    EthernetPacket = Ether(dst='ff:ff:ff:ff:ff:ff')/ARP(pdst=ip)
+    result = srp(EthernetPacket, timeout=3, verbose=False)[0]
+    return result[0][1].hwsrc
+
+	def process(packet):
+	    if packet.haslayer(ARP):
+	        if packet[ARP].op == 2:
+	            try:
+	                RealMacAddress = get_mac(packet[ARP].psrc)
+
+ 	               FakeMacAdderss = packet[ARP].hwsrc
+
+   	             if real_mac != response_mac:
+	                    print "[!] You are under attack, REAL-MAC:" + RealMacAddress.upper(), "FAKE-MAC:" + FakeMacAdderss.upper()
+
+  	          except IndexError:
+ 	               pass
+	
+
+
 
 if __name__ == '__main__':
     while True:
@@ -453,6 +490,8 @@ if __name__ == '__main__':
                 NetScanner()
             if TN == 12:
                 MacFlooder()
+	    if TN == 13
+		ArpAttackDetector()
             if TN == 99:
                 break
             #else:
