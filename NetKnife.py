@@ -451,13 +451,12 @@ def ArpAttackDetector():
 	            try:
 	                RealMacAddress = get_mac(packet[ARP].psrc)
 
- 	               FakeMacAdderss = packet[ARP].hwsrc
+ 	               	FakeMacAdderss = packet[ARP].hwsrc
 
-   	             if real_mac != response_mac:
-	                    print "[!] You are under attack, REAL-MAC:" + RealMacAddress.upper(), "FAKE-MAC:" + FakeMacAdderss.upper()
-
-  	          except IndexError:
- 	               pass
+   	             	if real_mac != response_mac:
+	                	print "[!] You are under attack, REAL-MAC:" + RealMacAddress.upper(), "FAKE-MAC:" + FakeMacAdderss.upper()
+		except IndexError:
+ 	        	pass
 	
 
 
