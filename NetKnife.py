@@ -489,7 +489,7 @@ if __name__ == '__main__':
                 NetScanner()
             if TN == 12:
                 MacFlooder()
-	    if TN == 13
+	    if TN == 13:
 		ArpAttackDetector()
             if TN == 99:
                 break
