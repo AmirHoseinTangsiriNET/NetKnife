@@ -58,8 +58,8 @@ printer ("\033[91m[10]:Tcp Port Scanner Tools")
 printer ("\033[91m[11]:Live IP And Device scanner")
 printer ("\033[91m[12]:Mac Flooder Tools")
 printer ("\033[91m[13]:Arp Spoofing And Arp Cache Poinsing Attack Detection Tools")
-printer ("\033[91m[99]:Exit The NetKnife")
-printer("\033[91m[14}:Vlan Hopping Attacker Tools(Double Tagging Method)")
+printer ("\033[91m[14]:Vlan Hopping Attacker Tools(Double Tagging Method)")
+printer ("\033[91m[99]:Exit In The NetKnife")
 print Fore.GREEN + ("--------------------------------------------------------------")
 
 
@@ -407,7 +407,9 @@ def NetScanner():
 	
 
 	
-
+	
+#Mac Flooder Tools
+#This tool is used for Mac Flooding attacks on Layer 2 networks. Attacks such as CAM / MAC Table OverFlow can be implemented with this tool
 
 def MacFlooder():
     print """
@@ -424,6 +426,10 @@ def MacFlooder():
     Arp = ARP(pdst="255.255.255.255", hwdst="ff:ff:ff:ff:ff:ff")
     sendp(Arp/Ether,iface=Iface,count=count,inter= .001)
 
+
+
+#Arp Spoofing And Arp Cache Poinsing Attack Detection Tools
+#This tool is used to detect Arp Cache Poisoning attacks If your system is attacked by Arp Cache Poisoning, it will notify you if this tool is running
 
 def ArpAttackDetector():
 	print """
@@ -459,8 +465,10 @@ def ArpAttackDetector():
 		    except IndexError:
  	        	pass
 	
-
-
+#Vlan Hopping Attacker Tools(Double Tagging Method)
+#This tool is used for Layer 2 network attacks for unauthorized access to other vlan
+#This tool is used to implement Vlan hopping attack through Double Tagging Method
+	
 	
 def VlanHopping():
 	print """
