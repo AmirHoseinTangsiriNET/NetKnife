@@ -16,7 +16,8 @@ def clean():
 clean()
 print Fore.BLUE + "Started NetKnife Voice"
 playsound("Voice/NetVoice.mp3")
-os.system("clear")
+clean()
+#os.system("clear")
 
 print Fore.GREEN + ("""
 '|.   '|'           .   '||'  |'            ||    .'|.            
